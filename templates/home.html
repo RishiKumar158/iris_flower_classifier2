@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iris Prediction website</title>
+</head>
+<body>
+<h1>Welcome to iris Classifier</h1>
+<h2>It classifies the flower based on the data given</h2>
+<h2>Please Enter the flower Measurements below: </h2>
+
+<form method="post">
+    {{form.hidden_tag()}}
+    {{form.sep_len.label}} {{form.sep_len}}
+    <br><br>
+    {{form.sep_wid.label}} {{form.sep_wid}}
+    <br><br>
+    {{form.pet_len.label}} {{form.pet_len}}
+    <br><br>
+    {{form.pet_wid.label}} {{form.pet_wid}}
+    <br><br>
+    {{form.submit()}}
+</form>
+</body>
+</html>
